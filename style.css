@@ -1,0 +1,153 @@
+/*
+Theme Name: Nunu's
+Author: Garrett Roberts
+Author URI: https://www.linkedin.com/in/garrett-roberts-b45640186/,
+Description: Theme for Nunu's Desserts With Soul
+Version: 1.0
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeee;
+  padding: 8px 16px;
+  z-index: 5;
+  height: 118px;
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+  right: 40px;
+}
+
+nav ul li {
+  transition: padding 1s;
+  border-bottom: 1px solid black;
+  margin: 25px;
+}
+
+nav ul li:hover {
+  padding: 0 5px;
+}
+
+.active {
+  font-weight: bold;
+  padding: 0 5px;
+  border-bottom: 2px solid black;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Scrollout Menu */
+#hidden-menu {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  display: none;
+  transition: padding 2s;
+  padding: 100px 0 0 0;
+  background-color: #eeeeee;
+}
+
+#hidden-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#hidden-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+#hidden-menu ul li {
+  transition: padding 1s;
+  border-bottom: 1px solid black;
+  margin: 25px;
+  width: 25%;
+}
+
+#hidden-menu ul li:hover {
+  padding: 0 5px;
+}
+
+/* Header Media Queries */
+@media (max-width: 700px) {
+
+  #menu-icon {
+    display: block;
+    width: 35px;
+    position: relative;
+    right: 50px;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+/* Force banner and main to render below fixed header */
+#banner, main {
+  position: relative;
+  top: 118px;
+}
+
+/* Banner */
+#banner {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+/* Cards */
+#cards-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 5vh 0;
+}
+
+/* Quote */
+#reviews-banner {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reviews-banner blockquote {
+  display: block;
+  width: 60%;
+  padding: 5vh 0;
+  text-align: center;
+}
+
+#reviews-banner footer {
+  margin-top: 3vh;
+}
