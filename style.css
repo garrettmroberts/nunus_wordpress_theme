@@ -130,7 +130,12 @@ nav ul li:hover {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 5vh 0;
+}
+
+#cards-section > section {
+  padding: 0 25px;
 }
 
 /* Quote */
@@ -150,4 +155,31 @@ nav ul li:hover {
 
 #reviews-banner footer {
   margin-top: 3vh;
+}
+
+/* Find Us Section */
+#find-us {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+}
+
+#find-us > div {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#contact {
+  min-width: 200px;
+}
+
+@media (max-width: 600px) {
+  #map img {
+    width: 100%;
+  }
 }
