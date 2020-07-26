@@ -22,9 +22,4 @@
 
   </div>
 
-  <div>
-    <button>See Menu Now</button>
-    <button>Order online Now</button>
-  </div>
-
   <?php get_footer(); ?>

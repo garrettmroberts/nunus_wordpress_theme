@@ -28,7 +28,7 @@ nav {
   background-color: #eeeeee;
   padding: 8px 16px;
   z-index: 5;
-  height: 100px;
+  height: 15vh;
   box-sizing: border-box;
 }
 
@@ -127,7 +127,7 @@ nav ul li:hover {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 40vh;
+  height: 85vh;
   background-image: url(img/sweetPotatoPie.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -136,6 +136,7 @@ nav ul li:hover {
 
 #banner img {
   border-radius: 100%;
+  height: 45vh;
 }
 
 /* Cards */
@@ -143,12 +144,38 @@ nav ul li:hover {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: stretch;
   flex-wrap: wrap;
-  padding: 5vh 0;
+  padding: 5vh 0 10vh 0;
 }
 
 #cards-section > section {
   padding: 0 25px;
+}
+
+.card {
+  min-height: 325px;
+  max-width: 400px;
+  background-color: #FDEDD4;
+  box-sizing: border-box;
+}
+
+.card p {
+  padding: 0 5vw;
+}
+
+.card p:last-of-type {
+  padding-bottom: 5vh;
+}
+
+.card h3 {
+  padding: 5vh 5vw 0 5vw;
+}
+
+#warning-label {
+  text-transform: capitalize;
+  color: red;
+  font-size: 1.2em;
 }
 
 /* Quote */
@@ -158,13 +185,13 @@ nav ul li:hover {
   justify-content: center;
   align-items: center;
 }
-
 #reviews-banner blockquote {
   display: block;
   width: 60%;
-  padding: 5vh 0;
+  padding: 10vh 0;
   text-align: center;
   color: #FFFCED;
+  font-size: 1.8em;
 }
 
 #reviews-banner footer {
@@ -182,7 +209,7 @@ nav ul li:hover {
 
 #find-us > div {
   width: 95%;
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -192,6 +219,8 @@ nav ul li:hover {
 #map {
   height: 400px;
   min-width: 500px;
+  flex-basis: 60%;
+  max-width: 550px;
 }
 
 #contact {
@@ -199,7 +228,16 @@ nav ul li:hover {
 }
 
 @media (max-width: 600px) {
-  #map img {
-    width: 100%;
-  }
+  
+}
+
+/* Footer */
+footer {
+  background-color: #985927;
+}
+
+footer h3 {
+  color: #FFFCED;
+  margin: 0px;
+  padding: 3vh 5vw;
 }

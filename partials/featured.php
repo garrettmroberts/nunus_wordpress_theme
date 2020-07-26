@@ -1,4 +1,4 @@
 <section>
-  <h3>Featured Desserts</h3>
-  <img src="https://via.placeholder.com/300x225?text=Placeholder+Image+2">
+  <h2>Featured Desserts</h2>
+  <img class='card' src="https://via.placeholder.com/400x225?text=Placeholder+Image+2">
 </section>
