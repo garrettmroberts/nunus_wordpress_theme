@@ -1,8 +1,9 @@
 <div id="map">
   <h3>How to find us</h3>
-  <img src="https://via.placeholder.com/500x300?text=Map+Placeholder">
+  <?php echo do_shortcode('[leaflet-map address="360 Del Mar Ave, Vallejo, CA" height="80%" zoom="14" zoomcontrol="1"]') ?>
+  <?php echo do_shortcode('[leaflet-marker address="360 Del Mar Ave, Vallejo, CA"]') ?>
 </div>
 <div id="contact">
-  <p>Open Weekends 11AM-7PM</p>
+  <p>360 Del Mar Ave,<br>Vallejo, CA 94587</p>
   <p>Phone: (510)-520-0175</p>
 </div>

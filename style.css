@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #985927;
+}
+
+
 /* Navbar */
 nav {
   position: fixed;
@@ -23,13 +28,12 @@ nav {
   background-color: #eeeeee;
   padding: 8px 16px;
   z-index: 5;
-  height: 118px;
+  height: 100px;
   box-sizing: border-box;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
 }
 
 nav ul {
@@ -41,7 +45,7 @@ nav ul {
 
 nav ul li {
   transition: padding 1s;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #985927;
   margin: 25px;
 }
 
@@ -52,7 +56,8 @@ nav ul li:hover {
 .active {
   font-weight: bold;
   padding: 0 5px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #985927;
+  transition: padding 1s;
 }
 
 #menu-icon {
@@ -69,7 +74,7 @@ nav ul li:hover {
   display: none;
   transition: padding 2s;
   padding: 100px 0 0 0;
-  background-color: #eeeeee;
+  background-color: #FFFCED;
 }
 
 #hidden-menu ul {
@@ -112,7 +117,7 @@ nav ul li:hover {
 /* Force banner and main to render below fixed header */
 #banner, main {
   position: relative;
-  top: 118px;
+  top: 100px;
 }
 
 /* Banner */
@@ -122,7 +127,15 @@ nav ul li:hover {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 50vh;
+  height: 40vh;
+  background-image: url(img/sweetPotatoPie.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#banner img {
+  border-radius: 100%;
 }
 
 /* Cards */
@@ -140,7 +153,7 @@ nav ul li:hover {
 
 /* Quote */
 #reviews-banner {
-  background-color: #eeeeee;
+  background-color: #985927;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,6 +164,7 @@ nav ul li:hover {
   width: 60%;
   padding: 5vh 0;
   text-align: center;
+  color: #FFFCED;
 }
 
 #reviews-banner footer {
@@ -167,11 +181,17 @@ nav ul li:hover {
 }
 
 #find-us > div {
-  width: 90%;
+  width: 95%;
+  height: 400px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+#map {
+  height: 400px;
+  min-width: 500px;
 }
 
 #contact {

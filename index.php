@@ -1,3 +1,3 @@
 <?php get_header(); ?>
-<h2>Index.php says hello.</h2>
+<?php // This file left intentionally empty. ?>
 <?php get_footer(); ?>
