@@ -28,7 +28,7 @@ nav {
   background-color: #eeeeee;
   padding: 8px 16px;
   z-index: 5;
-  height: 15vh;
+  height: 100px;
   box-sizing: border-box;
 }
 
@@ -206,21 +206,21 @@ nav ul li:hover {
 #reviews-banner blockquote {
   display: block;
   width: 60%;
-  padding: 10vh 0;
+  padding: 5vh 0;
   text-align: center;
   color: #FFFCED;
   font-size: 1.8em;
 }
 
-#reviews-banner footer {
-  margin-top: 3vh;
+#reviews-banner p {
+  margin: 3vh 0 0 0;
+  color: #FFFCED; 
 }
 
 @media (max-width: 600px) {
   #reviews-banner blockquote {
     font-size: 1.2em;
     width: 80%;
-    padding: 5vh 0;
   }
 }
 
@@ -257,16 +257,63 @@ nav ul li:hover {
     flex-direction: column;
     align-items: stretch;
     text-align: center;
+    height: auto;
+    margin-bottom: 50px;
   }
 }
 
 /* Footer */
 footer {
   background-color: #985927;
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
 }
 
 footer h3 {
   color: #FFFCED;
   margin: 0px;
   padding: 3vh 5vw;
+}
+
+/* About page */
+#about-container {
+  min-height: 50vh;
+  padding-top: 15px;
+}
+
+#about-container > h1 {
+  text-align: center;
+}
+
+#about-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-container > div > img {
+  margin: 10px;
+}
+
+#about-text > p {
+  padding: 0 5vw;
+  max-width: 60vw;
+  display: block;
+  
+}
+
+#about-text > p:last-of-type {
+  margin-bottom: 5vh;
+}
+
+#review-container {
+  height: 50vh;
+  background-color: #FDEDD4;
+  padding-bottom: 100px;
+}
+
+#review-container > h2 {
+  padding: 3vh 0;
+  text-align: center;
 }
