@@ -68,7 +68,7 @@ nav ul li:hover {
 
 /* Scrollout Menu */
 #hidden-menu {
-  position: absolute;
+  position: fixed;
   z-index: 4;
   width: 100%;
   display: none;
