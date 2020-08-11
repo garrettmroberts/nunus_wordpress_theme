@@ -3,7 +3,7 @@
     <div id='about-container'>
       <h1>About Us</h1>
       <div>
-        <img src='https://via.placeholder.com/200x300/?text=About+Us+Placeholder'/>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/aboutUsBanner.jpg">
         <div id='about-text'>
           <p>How I got started</p>
 

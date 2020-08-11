@@ -1,9 +1,16 @@
 <section>
   <h2>Nunu's News</h2>
   <div class='card'>
-    <h3 id='warning-label'>Covid-19 Updates</h3>
-    <p>Nunu's desserts with soul will NOT be at Berkeley Flea Market or other events until further notice.</p>
-    <p>Orders can be placed through DoorDash or GrubHub for free deliveries.  We are also open on weekends 11AM-7PM no contact curbside pickup only.</p>
-    <p>Please use basic heigene and physical distancing.  Thank you and stay safe!</p>
+  <?php 
+$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>1)); ?>
+<?php if ( $wpb_all_query->have_posts() ) : ?>
+  <!-- the loop -->
+  <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+      <h3><?php the_title(); ?></h3>
+      <p><?php the_content(); ?></p>
+  <?php endwhile; ?>
+  <!-- end of the loop -->
+ <?php wp_reset_postdata(); ?>
+<?php endif; ?>
   </div>
 </section>
