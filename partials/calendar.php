@@ -1,1 +1,0 @@
-<?php echo do_shortcode('[events_calendar long_events=1 full=1]') ?>

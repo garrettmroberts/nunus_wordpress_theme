@@ -27,7 +27,7 @@
   <nav>
     <div id="logo-img">
       <a href='#'>
-        <img src="https://via.placeholder.com/75">
+        <img src="https://via.placeholder.com/250x50">
       </a>
     </div>
     <div id="menu-icon">

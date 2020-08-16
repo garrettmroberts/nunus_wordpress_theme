@@ -18,9 +18,4 @@
     </div>
   </div>
 
-  <div id="events-calendar">
-    <?php get_template_part('partials/calendar') ?>
-  </div>
-
-
 <?php get_footer(); ?>
