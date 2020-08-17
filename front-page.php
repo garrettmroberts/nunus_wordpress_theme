@@ -27,7 +27,6 @@
       <i class="fab fa-facebook-f"></i>
     </a>
   </div>
-
-
+</main>
 
 <?php get_footer(); ?>

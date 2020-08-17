@@ -19,7 +19,11 @@
         <a href="<?php echo site_url('/about'); ?>">About Us</a>
       </li>
       <li>
+        <a href="<?php echo site_url('/events'); ?>">Events</a>
+      </li>
+      <li>
         <a href="<?php echo site_url('/order'); ?>">Order Online</a>
+        <i class='fas fa-shopping-bag'></i>
       </li>
     </ul>
   </div>
@@ -27,7 +31,7 @@
   <nav>
     <div id="logo-img">
       <a href='#'>
-        <img src="https://via.placeholder.com/250x50">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/horizontalLogo.png">
       </a>
     </div>
     <div id="menu-icon">
@@ -44,7 +48,11 @@
         <a href="<?php echo site_url('/about'); ?>">About Us</a>
       </li>
       <li>
+        <a href="<?php echo site_url('/events'); ?>">Events</a>
+      </li>
+      <li>
         <a href="<?php echo site_url('/order'); ?>">Order Online</a>
+        <i class='fas fa-shopping-bag'></i>
       </li>
     </ul>
   </nav>
