@@ -18,4 +18,16 @@
     </div>
   </div>
 
+  <div id='social-links'>
+    <a href='https://www.instagram.com' class='left-icon'>
+      <i class="fab fa-instagram"></i>
+    </a>
+    
+     <a href='https://www.facebook.com' class='right-icon'>
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </div>
+
+
+
 <?php get_footer(); ?>

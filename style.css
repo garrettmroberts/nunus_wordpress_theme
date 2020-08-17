@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 nav {
   position: fixed;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   height: 187px;
   display: flex;
   justify-content: space-between;
@@ -121,6 +121,14 @@ nav ul li {
   nav ul {
     display: none;
   }
+
+  #logo-img {
+    margin-left: 10px;
+  }
+
+  #menu-icon {
+    right: 10px;
+  }
 }
 
 /* Force banner and main to render below fixed header */
@@ -150,6 +158,7 @@ nav ul li {
   min-height: 10vh;
   border: 1px solid #985927;
   box-shadow: 1px 1px 4px #5D2308;
+  font-size: 1.2em;
 }
 
 .bannerLeft {
@@ -167,14 +176,33 @@ nav ul li {
   height: 65vh;
 }
 
-@media (max-width: 600px) {
-  #banner {
+@media (max-width: 1900px) {
+  #banner img {
     height: 50vh;
   }
 
-  #banner img {
-    height: 40vh;
+  .bannerSide {
+    font-size: 1em;
   }
+}
+
+@media (max-width: 550px) {
+  #banner {
+    flex-direction: column;
+    height: 75vh;
+  }
+
+  .bannerLeft {
+    left: 0px;
+    top: 40px;
+  }
+
+  .bannerRight {
+    right: 0px;
+    bottom: 40px;
+  }
+
+
 }
 
 /* Cards */
@@ -222,11 +250,11 @@ nav ul li {
 @media (max-width: 600px) {
   #cards-section > section {
     width: 100vw;
-    overflow: hidden;
   }
 
   .card {
     max-width: none;
+    width: 100vw;
   }
 }
 
@@ -264,12 +292,12 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vh 0;
+  padding: 5vh 0 0 0;
 }
 
 #find-us > div {
   width: 95%;
-  height: 500px;
+  height: 450px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -277,10 +305,13 @@ nav ul li {
 }
 
 #map {
-  height: 400px;
-  flex-basis: 70%;
-  max-width: 550px;
+  height: 450px;
+  flex-basis: 65%;
   z-index: -1;
+}
+
+.leaflet-map {
+  border: 1px solid #985927;
 }
 
 #contact {
@@ -297,17 +328,30 @@ nav ul li {
   }
 }
 
-#events-calendar {
-  padding: 0 10vw 100px 10vw;
+#social-links {
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+#social-links > a {
+  font-size: 1.5em;
+}
+
+.left-icon {
+  margin-right: 20px;
+}
+
+.right-icon {
+  margin-left: 20px;
 }
 
 /* Footer */
 footer {
   background-color: #985927;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100vw;
 }
