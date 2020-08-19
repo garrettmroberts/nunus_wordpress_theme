@@ -22,7 +22,7 @@
         <a href="<?php echo site_url('/events'); ?>">Events</a>
       </li>
       <li>
-        <a href="<?php echo site_url('/order'); ?>">Order Online</a>
+        <a href="<?php echo site_url('/store'); ?>">Order Online</a>
         <i class='fas fa-shopping-bag'></i>
       </li>
     </ul>
@@ -51,7 +51,7 @@
         <a href="<?php echo site_url('/events'); ?>">Events</a>
       </li>
       <li>
-        <a href="<?php echo site_url('/order'); ?>">Order Online</a>
+        <a href="<?php echo site_url('/store'); ?>">Order Online</a>
         <i class='fas fa-shopping-bag'></i>
       </li>
     </ul>

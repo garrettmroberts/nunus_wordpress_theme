@@ -378,8 +378,8 @@ nav ul li:last-child a, nav ul li:last-child i {
 /* Footer */
 footer {
   background-color: #985927;
-  position: fixed;
-  bottom: 0px;
+  position: relative;
+  bottom: -40px;
   width: 100vw;
   z-index: 2;
 }
